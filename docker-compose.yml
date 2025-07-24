@@ -1,0 +1,7 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: instagram-recipe-bot
+    env_file:
+      - .env
+    restart: unless-stopped
